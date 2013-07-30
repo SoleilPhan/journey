@@ -1,0 +1,258 @@
+body{
+	background-color: #343434;
+}
+
+.wrapper{
+	font-family: Brandon Grotesque, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #CCCACA;
+	text-align: center;
+	letter-spacing: 0.5px;
+	word-spacing: 0.8px;
+
+}
+
+.title{
+	margin-top: 70px;
+	font-family: Wisdom Script Ai;
+	font-size: 78px;
+	color: #F2673C;
+}
+
+
+#map{
+	position: relative;
+	height: 307px;
+	width: 600px;
+	margin: 20px auto;
+	background:url(worldmap.png);
+}
+
+.tooltip{
+	position: absolute;
+	height: 5%;
+	left: 4.5%;
+	top: 20%;
+	width: 2%;
+	text-decoration: none;
+	color: black;
+	opacity: 0.8;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.tooltip span {
+	position: absolute;
+	visibility: hidden;
+}
+
+.tooltip:hover span, .tooltip:focus span{
+	left: 40px;
+	top: -60px;
+	width: 200px;
+	padding: 10px;
+	background: white;
+	visibility: visible;
+	z-index: 1;
+
+}
+
+.tooltip1{
+	position: absolute;
+	height: 5%;
+	left: 4%;
+	top: 26%;
+	width: 2%;
+	text-decoration: none;
+	color: black;
+	opacity: 0.8;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.tooltip1 span {
+	position: absolute;
+	visibility: hidden;
+}
+
+.tooltip1:hover span, .tooltip1:focus span{
+	left: 40px;
+	top: -60px;
+	width: 200px;
+	padding: 10px;
+	background: white;
+	visibility: visible;
+	z-index: 1;
+}
+
+.tooltip2{
+	position: absolute;
+	height: 5%;
+	left: 19%;
+	top: 21%;
+	width: 2%;
+	text-decoration: none;
+	color: black;
+	opacity: 0.8;
+	font-weight: 400;
+	z-index: 2;
+	font-size: 14px;
+}
+
+.tooltip2 span {
+	position: absolute;
+	visibility: hidden;
+}
+
+.tooltip2:hover span, .tooltip2:focus span{
+	left: 40px;
+	top: -60px;
+	width: 200px;
+	padding: 10px;
+	background: white;
+	visibility: visible;
+	z-index: 1;
+}
+
+.tooltip3{
+	position: absolute;
+	height: 5%;
+	left: 83%;
+	top: 41%;
+	width: 2%;
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+	z-index: 2;
+	opacity: 0.9;
+	font-size: 14px;
+}
+
+.tooltip3 span {
+	position: absolute;
+	visibility: hidden;
+}
+
+.tooltip3:hover span, .tooltip3:focus span{
+	left: 40px;
+	top: -60px;
+	width: 200px;
+	padding: 10px;
+	background: white;
+	visibility: visible;
+	z-index: 1;
+}
+
+.tooltip4{
+	position: absolute;
+	height: 5%;
+	left: 46%;
+	top: 18%;
+	width: 2%;
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+	z-index: 2;
+	opacity: 0.8;
+	font-size: 14px;
+}
+
+.tooltip4 span {
+	position: absolute;
+	visibility: hidden;
+}
+
+.tooltip4:hover span, .tooltip4:focus span{
+	left: 40px;
+	top: -60px;
+	width: 200px;
+	padding: 10px;
+	background: white;
+	visibility: visible;
+	z-index: 1;
+}
+
+.tooltip5{
+	position: absolute;
+	height: 5%;
+	left: 27%;
+	top: 60%;
+	width: 2%;
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+	z-index: 2;
+	opacity: 0.9;
+	font-size: 14px;
+}
+
+.tooltip5 span {
+	position: absolute;
+	visibility: hidden;
+}
+
+.tooltip5:hover span, .tooltip5:focus span{
+	left: 40px;
+	top: -60px;
+	width: 200px;
+	padding: 10px;
+	background: white;
+	visibility: visible;
+	z-index: 1;
+}
+
+/*#sanfrancisco {
+	height: 5%;
+	left: 23%;
+	top: 19.5%;
+	width: 2%;
+}
+
+#irvine {
+	height: 5%;
+	left: 23%;
+	top: 25%;
+	width: 2%;
+}
+
+#pittsburgh {
+	height: 5%;
+	left: 30%;
+	top: 21%;
+	width: 2%;
+}
+
+#miami {
+	height: 5%;
+	left: 30.2%;
+	top: 28%;
+	width: 2%;
+}
+
+#italy {
+	height: 5%;
+	left:50%;
+	top:23%;
+	width: 2%;
+}
+
+#paris {
+	height: 5%;
+	left:48%;
+	top:17%;
+	width: 2%;
+}
+*/
+
+
+
+@font-face {
+	font-family: Brandon Grotesque;
+	src: url(Brandon_reg.otf);
+}
+
+@font-face{
+	font-family: Wisdom Script Ai;
+	src: url(Wisdom Script.otf);
+}
