@@ -1,6 +1,15 @@
 body{
 	background-color: #343434;
+	background-attachment: fixed;
+	margin: 0 auto;
 }
+
+a:link {text-decoration:none; font-weight: 400; font-size: 16px;}  
+			/* no line */
+	a:link {color:white;}    /* unvisited link */
+	a:visited {color:white;}  /* visited link */
+	a:hover {color:#343434;}   /* mouse over link */
+
 
 .wrapper{
 	font-family: Brandon Grotesque, sans-serif;
@@ -10,8 +19,8 @@ body{
 	text-align: center;
 	letter-spacing: 0.5px;
 	word-spacing: 0.8px;
-
 }
+
 
 .title{
 	margin-top: 70px;
@@ -29,6 +38,7 @@ body{
 	background:url(worldmap.png);
 }
 
+
 .tooltip{
 	position: absolute;
 	height: 5%;
@@ -37,10 +47,10 @@ body{
 	width: 2%;
 	text-decoration: none;
 	color: black;
-	opacity: 0.8;
+	opacity: 0.9;
 	font-weight: 400;
-	font-size: 14px;
-	z-index:5;
+	font-size: 12px;
+	z-index: 500;
 }
 
 .tooltip span {
@@ -52,10 +62,11 @@ body{
 	left: 40px;
 	top: -60px;
 	width: 200px;
-	padding: 10px;
+	padding: 15px;
 	background: white;
 	visibility: visible;
 	z-index: 1;
+	border-radius: 5px;
 	-moz-transition: background .4s linear;
 	-ms-transition: background .4s linear;
 	-o-transition: background .4s linear;
@@ -71,10 +82,10 @@ body{
 	width: 2%;
 	text-decoration: none;
 	color: black;
-	opacity: 0.8;
+	opacity: 0.9;
 	font-weight: 400;
-	font-size: 14px;
-	z-index:5;
+	font-size: 12px;
+	z-index: 500;
 }
 
 .tooltip1 span {
@@ -85,11 +96,12 @@ body{
 .tooltip1:hover span, .tooltip1:focus span{
 	left: 40px;
 	top: -60px;
-	width: 200px;
-	padding: 10px;
+	width: 300px;
+	padding: 15px;
 	background: white;
 	visibility: visible;
-	z-index: 0;
+	z-index: 1;
+	border-radius: 5px;
 	-moz-transition: background .4s linear;
 	-ms-transition: background .4s linear;
 	-o-transition: background .4s linear;
@@ -104,10 +116,10 @@ body{
 	width: 2%;
 	text-decoration: none;
 	color: black;
-	opacity: 0.8;
+	opacity: 0.9;
 	font-weight: 400;
-	z-index: 2;
-	font-size: 14px;
+	font-size: 12px;
+	z-index: 400;
 }
 
 .tooltip2 span {
@@ -118,11 +130,12 @@ body{
 .tooltip2:hover span, .tooltip2:focus span{
 	left: 40px;
 	top: -60px;
-	width: 200px;
-	padding: 10px;
+	width: 350px;
+	padding: 15px;
 	background: white;
 	visibility: visible;
 	z-index: 1;
+	border-radius: 5px;
 	-moz-transition: background .4s linear;
 	-ms-transition: background .4s linear;
 	-o-transition: background .4s linear;
@@ -138,24 +151,26 @@ body{
 	text-decoration: none;
 	color: black;
 	font-weight: 400;
-	z-index:5;
 	opacity: 0.9;
-	font-size: 14px;
+	font-size: 12px;
+	z-index:100;
 }
 
 .tooltip3 span {
 	position: absolute;
 	visibility: hidden;
+	z-index:1;
 }
 
 .tooltip3:hover span, .tooltip3:focus span{
 	left: 40px;
 	top: -60px;
-	width: 200px;
-	padding: 10px;
+	width: 240px;
+	padding: 15px;
 	background: white;
 	visibility: visible;
 	z-index: 1;
+	border-radius: 5px;
 	-moz-transition: background .4s linear;
 	-ms-transition: background .4s linear;
 	-o-transition: background .4s linear;
@@ -171,9 +186,9 @@ body{
 	text-decoration: none;
 	color: black;
 	font-weight: 400;
-	z-index: 2;
-	opacity: 0.8;
-	font-size: 14px;
+	opacity: 0.9;
+	font-size: 12px;
+	z-index:300;
 }
 
 .tooltip4 span {
@@ -184,11 +199,12 @@ body{
 .tooltip4:hover span, .tooltip4:focus span{
 	left: 40px;
 	top: -60px;
-	width: 200px;
-	padding: 10px;
+	width: 300px;
+	padding: 15px;
 	background: white;
 	visibility: visible;
 	z-index: 1;
+	border-radius: 5px;
 	-moz-transition: background .4s linear;
 	-ms-transition: background .4s linear;
 	-o-transition: background .4s linear;
@@ -204,9 +220,9 @@ body{
 	text-decoration: none;
 	color: black;
 	font-weight: 400;
-	z-index: 2;
 	opacity: 0.9;
-	font-size: 14px;
+	font-size: 12px;
+	z-index:350;
 }
 
 .tooltip5 span {
@@ -218,59 +234,166 @@ body{
 	left: 40px;
 	top: -60px;
 	width: 200px;
-	padding: 10px;
+	padding: 15px;
 	background: white;
 	visibility: visible;
 	z-index: 1;
+	border-radius: 5px;
 	-moz-transition: background .4s linear;
 	-ms-transition: background .4s linear;
 	-o-transition: background .4s linear;
 	transition: background .4s linear;
 }
 
-/*#sanfrancisco {
+.tooltip6{
+	position: absolute;
 	height: 5%;
-	left: 23%;
-	top: 19.5%;
+	left: 17%;
+	top: 33%;
 	width: 2%;
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+	opacity: 0.9;
+	font-size: 12px;
+	z-index:400;
 }
 
-#irvine {
-	height: 5%;
-	left: 23%;
-	top: 25%;
-	width: 2%;
+.tooltip6 span {
+	position: absolute;
+	visibility: hidden;
 }
 
-#pittsburgh {
-	height: 5%;
-	left: 30%;
-	top: 21%;
-	width: 2%;
+.tooltip6:hover span, .tooltip6:focus span{
+	left: 40px;
+	top: -60px;
+	width: 340px;
+	padding: 20px;
+	background: white;
+	visibility: visible;
+	border-radius: 5px;
+	-moz-transition: background .4s linear;
+	-ms-transition: background .4s linear;
+	-o-transition: background .4s linear;
+	transition: background .4s linear;
+	z-index: 1;
 }
 
-#miami {
+
+.nyc{
+	position: absolute;
 	height: 5%;
-	left: 30.2%;
-	top: 28%;
+	left: 21%;
+	top: 19%;
 	width: 2%;
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+	opacity: 0.9;
+	font-size: 12px;
+	z-index:400;
 }
 
-#italy {
-	height: 5%;
-	left:50%;
-	top:23%;
-	width: 2%;
+.nyc span {
+	position: absolute;
+	visibility: hidden;
 }
 
-#paris {
-	height: 5%;
-	left:48%;
-	top:17%;
-	width: 2%;
+.nyc:hover span, .nyc:focus span{
+	left: 40px;
+	top: -60px;
+	width: 250px;
+	padding: 15px;
+	background: white;
+	visibility: visible;
+	z-index: 1;
+	border-radius: 5px;
+	-moz-transition: background .4s linear;
+	-ms-transition: background .4s linear;
+	-o-transition: background .4s linear;
+	transition: background .4s linear;
 }
-*/
 
+.morocco{
+	position: absolute;
+	height: 5%;
+	left: 43%;
+	top: 29%;
+	width: 2%;
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+	opacity: 0.9;
+	font-size: 12px;
+	z-index:300;
+}
+
+.morocco span {
+	position: absolute;
+	visibility: hidden;
+}
+
+.morocco:hover span, .morocco:focus span{
+	left: 40px;
+	top: -60px;
+	width: 250px;
+	padding: 15px;
+	background: white;
+	visibility: visible;
+	z-index: 1;
+	border-radius: 5px;
+	-moz-transition: background .4s linear;
+	-ms-transition: background .4s linear;
+	-o-transition: background .4s linear;
+	transition: background .4s linear;
+}
+
+.greece{
+	position: absolute;
+	height: 5%;
+	left: 52%;
+	top: 23%;
+	width: 2%;
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+	opacity: 0.9;
+	font-size: 12px;
+	z-index:300;
+}
+
+.greece span {
+	position: absolute;
+	visibility: hidden;
+}
+
+.greece:hover span, .greece:focus span{
+	left: 40px;
+	top: -60px;
+	width: 250px;
+	padding: 15px;
+	background: white;
+	visibility: visible;
+	z-index: 1;
+	border-radius: 5px;
+	-moz-transition: background .4s linear;
+	-ms-transition: background .4s linear;
+	-o-transition: background .4s linear;
+	transition: background .4s linear;
+}
+
+
+.orange{
+	background-color:#F2673C;
+	font-family: Brandon Grotesque, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: black;
+	text-align: center;
+	letter-spacing: 0.5px;
+	word-spacing: 0.8px;
+	padding: 100px;
+}
 
 
 @font-face {
